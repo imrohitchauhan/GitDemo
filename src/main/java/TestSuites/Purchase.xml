@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="All Test Suites">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" name="SubmitTestsOrder">
+        <classes>
+            <class name="org.tests.SubmitTest"/>
+        </classes>
+    </test>
+
+    <test name="ErrorValidate">
+        <classes>
+            <class name = "org.tests.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>
